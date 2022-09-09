@@ -1,6 +1,6 @@
 import { Routes, Route } from 'react-router-dom';
 import Home from './Components/Home';
-import Quiz from './Components/Quiz';
+import Quiz from './Components/QuizItems/Quiz';
 import Resources from './Components/Resources';
 
 

@@ -10,12 +10,12 @@ function Resources() {
       <div className="videos-resources">
         <div className="videos">
           <h3>Colleen's Manga Recs Video</h3>
-          <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/169rKJBBc98" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/169rKJBBc98" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
           <p>This video was perfect to me, it gave a good laugh and the first "Is this a Shoujo?" gave me a good laugh.</p>
         </div>
         <div className="videos">
           <h3>The Japan Foundation, New York Video</h3>
-          <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/1mgCCtZ3iaA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/1mgCCtZ3iaA" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
         </div>
       </div>
       <div>

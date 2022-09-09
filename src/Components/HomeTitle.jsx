@@ -10,7 +10,7 @@ function HomeTitle() {
         1000,
         "So it's for girls..?",
         1000,
-        "So just gonna be another love story..?",
+        "So just a romance story..?",
         1000,
         "So it's Shoujo.",
         1000,
