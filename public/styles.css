@@ -42,6 +42,61 @@ nav li a {
   text-decoration: none;
 }
 
+/* quiz page */
+.question-card {
+  margin: 0 auto;
+  background-color: gray;
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: rgba(50, 50, 93, 0.23) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+  width: 90%;
+  height: auto;
+}
+
+.question-text {
+  color: aqua;
+  font-size: 24px;
+}
+
+.answer-text ul{
+  list-style: none;
+  padding: 0;
+}
+
+.answer-text button {
+  background-color: darkgray;
+  padding: 16px;
+  border: 3px solid white;
+  border-radius: 20px;
+  font-size: 20px;
+  margin: 8px;
+  width: 48%;
+}
+
+.final-score {
+  margin: 0 auto;
+  background-color: gray;
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: rgba(50, 50, 93, 0.23) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+  width: 60%;
+  height: auto;
+}
+
+.final-score button {
+  background-color: #141414ff;
+  border: none;
+  color: white;
+  padding: 10px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 25px;
+}
+
+
+/* resouces page */
 .videos-resources {
   display: inline-flex;
   text-align: center;
