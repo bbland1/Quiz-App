@@ -16,6 +16,11 @@ header h1 {
   text-align: center;
 }
 
+li {
+  color: #faa549ff;
+  
+}
+
 nav ul {
   background-color: #141414ff;
   list-style-type: none;
@@ -35,4 +40,22 @@ nav li a {
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
+}
+
+.videos-resources {
+  display: inline-flex;
+  text-align: center;
+  width: 100%;
+  justify-content: space-around;
+}
+
+.videos {
+  margin: 20px;
+  justify-content: center;
+}
+
+.videos p {
+  width: 550px;
+  overflow-wrap: break-word;
+  text-align: center;
 }
