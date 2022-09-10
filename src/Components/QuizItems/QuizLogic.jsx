@@ -1,14 +1,13 @@
 import React, { useState } from "react";
-import NavBar from "../NavBar";
 import questions from "./QuizQuestions";
 
-function Quiz() {
-  // State Properites of the quiz
+function QuizLogic() {
+  // State Properties of the quiz
   const [currentQuestion, setCurrentQuestion] = useState(0);
   const [showFinalScore, setShowFinalScore] = useState(false);
   const [score, setScore] = useState(0);
 
-  // giviing functionality
+  // giving functionality
   function handleAnswerClick(isCorrect) {
     console.log(isCorrect)
 
@@ -33,13 +32,9 @@ function Quiz() {
 
   return (
     <div>
-      <header className="header-title">
-        <NavBar />
-        <h1>Do you actually Shoujo?</h1>
-      </header>
-      <main>
-        {showFinalScore ? (
-          <div className="final-score">
+      {
+        showFinalScore ? (
+          <div className="final-score" >
             <h2>Seems you do know Shoujo</h2>
             <h3>You got {score} out of {questions.length} correct! {(score / questions.length) * 100}%</h3>
             <button onClick={() => handleRestart()}>Restart</button>
@@ -48,7 +43,6 @@ function Quiz() {
           <div className="question-card">
             <h2>Question {currentQuestion + 1} of {questions.length}</h2>
             <h3 className="question-text">{questions[currentQuestion].questionText}</h3>
-
             <div className="answer-text">
               <ul>
                 {questions[currentQuestion].answersOptions.map((answerOption) => {
@@ -61,10 +55,10 @@ function Quiz() {
               </ul>
             </div>
           </div>
-        )}
-      </main>
+        )
+      }
     </div>
-  );
+  )
 }
 
-export default Quiz;
+export default QuizLogic;

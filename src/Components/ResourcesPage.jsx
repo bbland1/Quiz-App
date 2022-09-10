@@ -23,7 +23,7 @@ function Resources() {
         <ul>
           <li><a href="https://comicsforum.org/2015/03/10/shojo-manga-research-the-legacy-of-women-critics-and-their-gender-based-approach-by-masafumi-monden/#more-3873">Manga Studies #7</a></li>
           <li><a href="https://comicsforum.org/2015/06/11/manga-studies-8-shojo-manga-history-the-obscured-decades-by-dalma-kalovics/">Manga Studies #8</a></li>
-          <li><a href="https://mangabrog.wordpress.com/2015/12/14/berserk-artist-kentaro-miura-interview-i-actually-dont-think-i-could-let-such-a-long-grim-story-end-with-a-grim-ending/">mangabrog: Beserk Artist Interview</a></li>
+          <li><a href="https://mangabrog.wordpress.com/2015/12/14/berserk-artist-kentaro-miura-interview-i-actually-dont-think-i-could-let-such-a-long-grim-story-end-with-a-grim-ending/">mangabrog: Berserk Artist Interview</a></li>
         </ul>
       </div>
     </div>
