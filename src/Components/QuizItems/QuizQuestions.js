@@ -4,8 +4,8 @@ const questions = [
     answersOptions: [
       { id: "A", answerText: "Any romance series set in high school", isCorrect: false },
       { id: "B", answerText: "Stories with female main characters", isCorrect: false },
-      { id: "C", answerText: "Series marketed to young girls (8-17) published in a Shoujo Magazine", isCorrect: true },
-      { id: "D", answerText: "Any series where battle action isn't the focus.", isCorrect: false }
+      { id: "C", answerText: "Series marketed to young girls and  published in a Shoujo Magazine", isCorrect: true },
+      { id: "D", answerText: "Any series a girl would like", isCorrect: false }
     ]
   },
   {

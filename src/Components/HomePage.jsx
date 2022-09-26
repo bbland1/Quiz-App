@@ -10,8 +10,8 @@ function Home() {
         <NavBar />
         <h1><HomeTitle /></h1>
       </header>
-      <main>
-        <h3>blah blah blah</h3>
+      <main className="main-part">
+        <h3>What is Shoujo?</h3>
         <button className="func-button"><Link to="/quiz" className="func-button">Start the quiz</Link></button>
       </main>
     </div>

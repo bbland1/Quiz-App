@@ -6,7 +6,7 @@ function HomeTitle() {
     <TypeAnimation
       // Same String at the start will only be typed once, initially
       sequence={[
-        "So it's not Shounen..?",
+        "So it's no action..?",
         1000,
         "So it's for girls..?",
         1000,
