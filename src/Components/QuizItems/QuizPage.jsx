@@ -15,7 +15,7 @@ function Quiz() {
     <div>
       <header className="header-title">
         <NavBar />
-        <h1>Do you actually Shoujo?</h1>
+        <h1>Is it a Shoujo?</h1>
       </header>
       <main>
         {startGame ? (<QuizLogic />) : (<GameStart onStart={onStart}/>)}

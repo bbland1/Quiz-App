@@ -94,7 +94,7 @@ nav li a:hover {
   height: auto;
 }
 
-.final-score button {
+.func-button button, Link {
   background-color: #faa549ff;
   border: none;
   color: white;

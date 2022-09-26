@@ -1,7 +1,7 @@
 import React from "react";
 import NavBar from "./NavBar";
 import HomeTitle from "./HomeTitle";
-import {Link} from "react-router-dom";
+import { Link } from "react-router-dom";
 
 function Home() {
   return (
@@ -12,7 +12,7 @@ function Home() {
       </header>
       <main>
         <h3>blah blah blah</h3>
-        <button><Link to="/quiz">Start the quiz</Link></button>
+        <button className="func-button"><Link to="/quiz" className="func-button">Start the quiz</Link></button>
       </main>
     </div>
   );

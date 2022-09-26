@@ -34,7 +34,7 @@ function QuizLogic() {
     <div>
       {
         showFinalScore ? (
-          <div className="final-score" >
+          <div className="func-button" >
             <h2>Seems you do know Shoujo</h2>
             <h3>You got {score} out of {questions.length} correct! {(score / questions.length) * 100}%</h3>
             <button onClick={() => handleRestart()}>Restart</button>
