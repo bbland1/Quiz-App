@@ -42,6 +42,7 @@ function QuizLogic() {
         ) : (
           <div className="question-card">
             <h2>Question {currentQuestion + 1} of {questions.length}</h2>
+            {questions[currentQuestion].question_img !== null && <img src={questions[currentQuestion].question_img} alt="" className="question-img"/>}
             <h3 className="question-text">{questions[currentQuestion].questionText}</h3>
             <div className="answer-text">
               <ul>

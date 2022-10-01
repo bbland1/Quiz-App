@@ -11,8 +11,10 @@ function Home() {
         <h1><HomeTitle /></h1>
       </header>
       <main className="main-part">
-        <h3>What is Shoujo?</h3>
+        <h2>What is Shoujo?</h2>
+        <h2>Why this site?</h2>
         <button className="func-button"><Link to="/quiz" className="func-button">Start the quiz</Link></button>
+        <button className="func-button">Start the quiz</button>
       </main>
     </div>
   );

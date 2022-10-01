@@ -69,7 +69,13 @@ nav li a:hover {
   box-shadow: rgba(50, 50, 93, 0.23) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
   width: 90%;
   height: auto;
+  align-content: center;
 }
+
+/* .question-img {
+  margin: 0 auto;
+  width: 200px;
+} */
 
 .question-text {
   color: aqua;

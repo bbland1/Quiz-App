@@ -1,5 +1,6 @@
 const questions = [
   {
+    
     questionText: "What is Shoujo?",
     answersOptions: [
       { id: "A", answerText: "Any romance series set in high school", isCorrect: false },
@@ -9,12 +10,21 @@ const questions = [
     ]
   },
   {
+   
     questionText: "What are 3 things to look at to tell if you've picked up a shoujo?",
     answersOptions: [
       { id: "A", answerText: "The eyes, the panelling", isCorrect: false },
       { id: "B", answerText: "what's going on", isCorrect: false },
       { id: "C", answerText: "hell yeah", isCorrect: true },
       { id: "D", answerText: "idk", isCorrect: false }
+    ]
+  },
+  {
+    question_img: "images/horimiya.jpg",
+    questionText: "Is Horimiya a Shoujo?",
+    answersOptions: [
+      { id: "A", answerText: "It's a shoujo because it is about romance.", isCorrect: true },
+      { id: "B", answerText: "It's a shounen, that is also about a romance.", isCorrect: false },
     ]
   }
 ]
