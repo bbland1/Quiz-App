@@ -13,8 +13,7 @@ function Home() {
       <main className="main-part">
         <h2>What is Shoujo?</h2>
         <h2>Why this site?</h2>
-        <button className="func-button"><Link to="/quiz" className="func-button">Start the quiz</Link></button>
-        <button className="func-button">Start the quiz</button>
+        <Link to="/quiz" className="func-button"><button>Start the quiz</button></Link>
       </main>
     </div>
   );

@@ -82,7 +82,7 @@ nav li a:hover {
   font-size: 24px;
 }
 
-.answer-text ul{
+.answer-text ul {
   list-style: none;
   padding: 0;
 }
@@ -97,6 +97,10 @@ nav li a:hover {
   width: 48%;
 }
 
+.answer-text button:hover {
+  background-color: #f2564fff;
+}
+
 .final-score {
   margin: 0 auto;
   background-color: gray;
@@ -107,7 +111,19 @@ nav li a:hover {
   height: auto;
 }
 
-.func-button button, Link {
+.func-button button {
+  background-color: #faa549ff;
+  border: none;
+  color: white;
+  padding: 10px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 25px;
+}
+
+.func-button a {
   background-color: #faa549ff;
   border: none;
   color: white;
