@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: #373737ff;
   color: #faa549ff;
@@ -23,18 +27,14 @@ header h1 {
   text-align: center;
 }
 
-li {
-  color: #faa549ff;
-
-}
-
 nav ul {
   background-color: #373737ff;
   list-style-type: none;
-  margin: 0;
+  margin: 100 0 0 0;
   padding: 0;
   display: flex;
   justify-content: space-around;
+  position: sticky;
 }
 
 nav li {
