@@ -16,6 +16,10 @@ body {
   width: 90%;
 }
 
+p {
+  color: white;
+}
+
 /* 141414ff */
 
 header h1 {
@@ -35,6 +39,7 @@ nav ul {
   display: flex;
   justify-content: space-around;
   position: sticky;
+  top: 0px;
 }
 
 nav li {
