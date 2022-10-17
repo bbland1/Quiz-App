@@ -147,6 +147,7 @@ nav li a:hover {
   text-align: center;
   width: 100%;
   justify-content: space-around;
+  flex-wrap: wrap;
 }
 
 .videos {
