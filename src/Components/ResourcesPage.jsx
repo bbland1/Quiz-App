@@ -1,7 +1,7 @@
 import React from "react";
 import NavBar from "./NavBar";
 
-function Resources() {
+function Links() {
   return (
     <div>
       <header className="header-title">
@@ -42,4 +42,4 @@ function Resources() {
   );
 }
 
-export default Resources;
+export default Links;

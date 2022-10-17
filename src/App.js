@@ -1,7 +1,7 @@
 import { Routes, Route } from 'react-router-dom';
 import Home from './Components/HomePage';
 import Quiz from './Components/QuizItems/QuizPage';
-import Resources from './Components/ResourcesPage';
+import Links from './Components/ResourcesPage';
 
 
 
@@ -11,7 +11,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/quiz" element={<Quiz />} />
-        <Route path="/resources" element={<Resources />} />
+        <Route path="/links" element={<Links />} />
       </Routes>
     </div>
   );
