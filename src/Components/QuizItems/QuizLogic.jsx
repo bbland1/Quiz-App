@@ -34,13 +34,15 @@ function QuizLogic() {
     <div>
       {
         showFinalScore ? (
-          <div className="func-button" >
+          <div className="func-button">
             <h2>Seems you do know Shoujo</h2>
             <h3>You got {score} out of {questions.length} correct! {(score / questions.length) * 100}%</h3>
             <button onClick={() => handleRestart()}>Restart</button>
           </div>
         ) : (
-          <div className="question-card">
+          <div className="question-card func-button">
+            <button>Back</button>
+            <button>Forward</button>
             <h2>Question {currentQuestion + 1} of {questions.length}</h2>
             {questions[currentQuestion].question_img !== null && <img src={questions[currentQuestion].question_img} alt="" className="question-img" />}
             {questions[currentQuestion].question_description !== null && <h4><em>{questions[currentQuestion].question_description}</em></h4>}

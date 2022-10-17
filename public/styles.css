@@ -58,8 +58,9 @@ nav li a {
 nav li a:hover {
   display: block;
   color: white;
-  background-color: #f2564fff;
-  border-radius: 15px;
+  background-color: rgb(240, 135, 130);
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
   text-align: center;
   padding: 16px 12.5rem;
   text-decoration: none;
@@ -77,10 +78,10 @@ nav li a:hover {
   align-content: center;
 }
 
-/* .question-img {
+.question-img {
   margin: 0 auto;
   width: 200px;
-} */
+}
 
 .question-text {
   color: aqua;
@@ -93,18 +94,9 @@ nav li a:hover {
 }
 
 .answer-text button {
-  background-color: darkgray;
-  padding: 16px;
-  border: 3px solid white;
-  border-radius: 20px;
-  font-size: 20px;
-  margin: 8px;
   width: 48%;
 }
 
-.answer-text button:hover {
-  background-color: #f2564fff;
-}
 
 .final-score {
   margin: 0 auto;
@@ -118,28 +110,31 @@ nav li a:hover {
 
 .func-button button {
   background-color: #faa549ff;
-  border: none;
-  color: white;
+  border: 3px solid darkgray;
+  color: black;
   padding: 10px 25px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
-  border-radius: 25px;
+  margin: 8px;
+  border-radius: 20px;
+  box-shadow: 7px 6px 28px 1px rgba(0, 0, 0, 0.24);
+  cursor: pointer;
+  outline: none;
+  transition: 0.2s all
 }
 
-.func-button a {
-  background-color: #faa549ff;
-  border: none;
-  color: white;
-  padding: 10px 25px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  border-radius: 25px;
+.func-button button:hover {
+  background-color: rgb(240, 135, 130);
 }
 
+.func-button button:active {
+  transform: scale(0.98);
+  /* Scaling button to 0.98 to its original size */
+  box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24);
+  /* Lowering the shadow */
+}
 
 /* resources page */
 .videos-resources {
