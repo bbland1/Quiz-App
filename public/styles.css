@@ -1,18 +1,19 @@
-@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,300;0,400;0,700;1,400;1,700&display=swap');
 
 html {
   scroll-behavior: smooth;
+  font-family: 'Source Sans Pro', sans-serif;
 }
 
 body {
   background-color: #373737ff;
   color: #faa549ff;
   margin: 0;
-  font-family: 'Comic Neue', cursive;
 }
 
 .main-part {
   margin: 0 auto;
+  top: 100px;
   width: 90%;
 }
 
@@ -20,7 +21,10 @@ p {
   color: white;
 }
 
-/* 141414ff */
+a,
+span {
+  color: #faa549ff;
+}
 
 header h1 {
   font-size: 6rem;
@@ -33,14 +37,11 @@ header h1 {
 }
 
 nav ul {
-  background-color: #373737ff;
   list-style-type: none;
   margin: 100 0 0 0;
   padding: 0;
   display: flex;
   justify-content: space-around;
-  position: sticky;
-  top: 0px;
 }
 
 nav li {
@@ -67,7 +68,7 @@ nav li a:hover {
 
 .active-nav {
   display: block;
-  color: white;
+  color: black;
   background-color: #faa549ff;
   border-radius: 15px;
   text-align: center;
@@ -83,21 +84,42 @@ nav li a:hover {
   box-shadow: rgba(50, 50, 93, 0.23) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
   width: 90%;
   height: auto;
-  align-content: center;
+  justify-content: center;
 }
 
 .direction {
   float: right;
 }
 
+.question-info {
+  display: inline-grid;
+  grid-template-columns: 1fr 0.5fr;
+  grid-template-rows: 1fr 1fr;
+  margin: 10px auto;
+}
+
 .question-img {
+  width: 250px;
+  grid-column: 2/ 3;
+  grid-row: 1 / span 2;
   margin: 0 auto;
-  width: 200px;
 }
 
 .question-text {
-  color: aqua;
-  font-size: 24px;
+  color: rgb(240, 135, 130);
+  font-size: 45px;
+  margin: 0 auto;
+  padding: 10px;
+  text-align: center;
+  grid-column: 1;
+  grid-row: 1;
+}
+
+.synopsis {
+  margin: 0 auto;
+  font-size: 20px;
+  grid-column: 1;
+  grid-row: 2;
 }
 
 .answer-text ul {
@@ -122,6 +144,8 @@ nav li a:hover {
 .func-button button {
   background-color: #faa549ff;
   border: 3px solid darkgray;
+  /* added inherit because the buttons would not accept the font family any other way */
+  font-family: inherit;
   color: black;
   padding: 10px 25px;
   text-align: center;
@@ -141,10 +165,10 @@ nav li a:hover {
 }
 
 .func-button button:active {
-  transform: scale(0.98);
   /* Scaling button to 0.98 to its original size */
-  box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24);
+  transform: scale(0.98);
   /* Lowering the shadow */
+  box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24);
 }
 
 /* resources page */
@@ -159,10 +183,4 @@ nav li a:hover {
 .videos {
   margin: 20px;
   justify-content: center;
-}
-
-.videos p {
-  width: 550px;
-  overflow-wrap: break-word;
-  text-align: center;
 }

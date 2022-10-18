@@ -40,30 +40,27 @@ function QuizLogic() {
     if (previousQuestion <= questions.length || previousQuestion > 0) {
       setCurrentQuestion(previousQuestion);
     }
-    // } else if (previousQuestion <= questions.length) {
-    //   setCurrentQuestion(previousQuestion);
-    // } else {
-
-    // }
   }
 
   return (
     <div>
       {
         showFinalScore ? (
-          <div className="func-button">
+          <div className="question-card func-button">
             <h2>Seems you do know Shoujo</h2>
-            <h3>You got {score} out of {questions.length} correct! {(score / questions.length) * 100}%</h3>
+            <h3>You got {score} out of {questions.length} correct! {Math.round((score / questions.length) * 100)}%</h3>
             <button onClick={() => handleRestart()}>Restart</button>
           </div>
         ) : (
           <div className="question-card func-button">
             {currentQuestion !== 0 && <button onClick={() => goBack()} className="direction">Back</button>}
-            <h2>Question {currentQuestion + 1} of {questions.length}</h2>
             {currentQuestion !== 0 && <h3 className="direction">Score: {score}/{questions.length}</h3>}
-            {questions[currentQuestion].question_img !== null && <img src={questions[currentQuestion].question_img} alt="" className="question-img" />}
-            {questions[currentQuestion].question_description !== null && <h4><em>{questions[currentQuestion].question_description}</em></h4>}
-            <h3 className="question-text">{questions[currentQuestion].questionText}</h3>
+            <h3>Question {currentQuestion + 1} of {questions.length}</h3>
+            <div className="question-info">
+            <h2 className="question-text">{questions[currentQuestion].questionText}</h2>
+              {questions[currentQuestion].question_img !== null && <img src={questions[currentQuestion].question_img} alt={questions[currentQuestion].img_alt} className="question-img" />}
+              {questions[currentQuestion].question_description !== null && <p className="synopsis"><em>{questions[currentQuestion].question_description}</em></p>}
+            </div>
             <div className="answer-text">
               <ul>
                 {questions[currentQuestion].answersOptions.map((answerOption) => {
