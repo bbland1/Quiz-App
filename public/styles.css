@@ -8,7 +8,7 @@ html {
 body {
   background-color: #373737ff;
   color: #faa549ff;
-  margin: 0;
+  margin: 0 auto;
 }
 
 .main-part {
@@ -93,33 +93,42 @@ nav li a:hover {
 
 .question-info {
   display: inline-grid;
-  grid-template-columns: 1fr 0.5fr;
-  grid-template-rows: 1fr 1fr;
-  margin: 10px auto;
+  width: 100%;
+  grid-template-columns: 1fr 0.75fr;
+  grid-template-rows: auto auto;
+  justify-items: center;
+  align-items: center;
 }
 
 .question-img {
-  width: 250px;
+  width: 300px;
   grid-column: 2/ 3;
   grid-row: 1 / span 2;
-  margin: 0 auto;
+  justify-self: center;
+  align-self: center;
 }
 
 .question-text {
   color: rgb(240, 135, 130);
+  background-color: white;
+  border: thick double #faa549ff;
+  border-radius: 20px;
   font-size: 45px;
-  margin: 0 auto;
   padding: 10px;
   text-align: center;
   grid-column: 1;
   grid-row: 1;
+  justify-self: center;
+  align-self: center;
 }
 
 .synopsis {
-  margin: 0 auto;
   font-size: 20px;
   grid-column: 1;
   grid-row: 2;
+  justify-self: center;
+  align-self: center;
+  text-align: center;
 }
 
 .answer-text ul {

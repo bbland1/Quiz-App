@@ -1,7 +1,7 @@
 const questions = [
   {
     img_alt: "A blushing girl holding her phone looking to the right at a blushing boy with a heart drawn between them.",
-    question_img: "images/lovesickellie.png",
+    question_img: "images/isitshoujo.jpg",
     questionText: "What is a Shoujo?",
     question_description: "Starting off with simple with what should be a simple question.",
     questionValue: 1,
