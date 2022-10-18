@@ -9,11 +9,11 @@ function QuizLogic() {
 
   // giving functionality
   function handleAnswerClick(isCorrect) {
-    console.log(isCorrect)
 
     if (isCorrect) {
-      setScore(score + 1);
+      setScore(score + questions[currentQuestion].questionValue);
     }
+    console.log(score)
 
     const nextQuestion = currentQuestion + 1;
 
@@ -30,6 +30,23 @@ function QuizLogic() {
     setShowFinalScore(false);
   }
 
+  function goBack() {
+    if (score > 0) {
+      setScore(score - 1);
+    }
+
+    const previousQuestion = currentQuestion - 1;
+
+    if (previousQuestion <= questions.length || previousQuestion > 0) {
+      setCurrentQuestion(previousQuestion);
+    }
+    // } else if (previousQuestion <= questions.length) {
+    //   setCurrentQuestion(previousQuestion);
+    // } else {
+
+    // }
+  }
+
   return (
     <div>
       {
@@ -41,9 +58,9 @@ function QuizLogic() {
           </div>
         ) : (
           <div className="question-card func-button">
-            <button>Back</button>
-            <button>Forward</button>
+            {currentQuestion !== 0 && <button onClick={() => goBack()} className="direction">Back</button>}
             <h2>Question {currentQuestion + 1} of {questions.length}</h2>
+            {currentQuestion !== 0 && <h3 className="direction">Score: {score}/{questions.length}</h3>}
             {questions[currentQuestion].question_img !== null && <img src={questions[currentQuestion].question_img} alt="" className="question-img" />}
             {questions[currentQuestion].question_description !== null && <h4><em>{questions[currentQuestion].question_description}</em></h4>}
             <h3 className="question-text">{questions[currentQuestion].questionText}</h3>
