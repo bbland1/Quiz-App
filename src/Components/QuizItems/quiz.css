@@ -1,17 +1,8 @@
-h2 {
-  font-size: 2.8rem;
-  text-align: center;
-  color: rgb(240, 135, 130);
-  background-color: white;
-  border: thick double #faa549ff;
-  border-radius: 20px;
-  padding: 0.625rem;
-}
-
-h3, p {
+h3 {
   font-size: 1.25rem;
   text-align: center;
 }
+
 .question-card {
   margin: 0 auto;
   background-color: gray;
@@ -29,7 +20,7 @@ h3, p {
 .question-info {
   display: inline-grid;
   width: 100%;
-  grid-template-columns: 1fr 0.75fr;
+  grid-template-columns: auto auto;
   grid-template-rows: auto auto;
   column-gap: 0.625rem;
   justify-items: center;
@@ -48,6 +39,7 @@ h3, p {
 }
 
 .synopsis {
+  font-size: 1rem;
   grid-column: 1;
   grid-row: 2;
 }
@@ -65,37 +57,21 @@ h3, p {
   width: 60%;
 }
 
-@media screen and (orientation: landscape){
-  .question-card {
-    width: 95%;
-  }
-  .answer-text button {
-    width: 97%;
-  }
-}
-
 @media screen and (max-width: 768px){
-  .question-card {
-    width: 95%;
-  }
   .answer-text button {
-    width: 97%;
+    width: 97.5%;
   }
 }
 
 @media screen and (max-width: 425px) {
-  .question-card{
-    width: 97%;
-  }
-  
-  .question-info {
-    grid-template-rows: 0.25fr 1fr 1fr;
-  }
-
   .question-img {
     grid-column: 1;
     grid-row: 2;
-    
+    max-width: 100%;
+  }
+
+  .answer-text button {
+    width: 95%;
   }
 
   .synopsis {

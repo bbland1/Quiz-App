@@ -1,3 +1,8 @@
+a,
+span {
+  color: #faa549ff;
+}
+
 .videos-resources {
   display: inline-flex;
   text-align: center;
@@ -9,4 +14,11 @@
 .videos {
   margin: 20px;
   justify-content: center;
+}
+
+@media screen and (max-width: 425px) {
+  .videos-resources iframe {
+    width: 100%;
+  }
+
 }

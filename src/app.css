@@ -11,6 +11,16 @@ body {
   margin: 0 auto;
 }
 
+h2 {
+  font-size: 2.8rem;
+  text-align: center;
+  color: rgb(240, 135, 130);
+  background-color: white;
+  border: thick double #faa549ff;
+  border-radius: 20px;
+  padding: 0.625rem;
+}
+
 .main-part {
   margin: 0 auto;
   top: 100px;
@@ -19,11 +29,8 @@ body {
 
 p {
   color: white;
-}
-
-a,
-span {
-  color: #faa549ff;
+  font-size: 1.25rem;
+  text-align: center;
 }
 
 header h1 {
@@ -68,5 +75,15 @@ header h1 {
 @media screen and (max-width: 786px) {
   header h1 {
     font-size: 4rem;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  header h1 {
+    font-size: 2rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
   }
 }
