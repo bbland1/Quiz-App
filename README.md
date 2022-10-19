@@ -1,4 +1,4 @@
-#So It's Shoujo
+# So It's Shoujo
 
 This at it's core is a quiz page, but adding in the links and the first page I wanted to give it a bit more. I really enjoy anime and manga, and was watching some video essays about them and thought I could making a web page with a quiz of one of the joke games the video did. 
 
