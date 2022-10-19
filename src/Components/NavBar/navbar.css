@@ -21,13 +21,16 @@ nav li a:hover {
   border-radius: 15px;
 }
 
+/* for react router setting of navlink to display differently when active */
 .active-nav {
   color: black;
   background-color: #faa549ff;
   border-radius: 15px;
 }
 
+/* media queries */
 
+/* tablet size screens to change the nave bar */
 @media screen and (max-width: 768px) {
   nav ul {
     display: block;
@@ -39,7 +42,7 @@ nav li a:hover {
     padding: 1rem 2rem;
   }
 }
-
+/* phone size screens to change the nave bar */
 @media screen and (max-width: 425px) {
   nav li a {
     font-size: 1.2rem;

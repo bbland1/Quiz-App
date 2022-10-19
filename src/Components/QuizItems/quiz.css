@@ -61,28 +61,37 @@ h3 {
   font-size: 1.8rem;
 }
 
+/* media queries */
+
+/* tablet size screens to change the nave bar */
 @media screen and (max-width: 768px){
   .answer-text button {
+    /* widen the button */
     width: 97.5%;
   }
 
   .final-score {
+    /* change the space of the score card when it is shown */
     width: 80%;
   }
 }
 
+/* phone size screens to change the nave bar */
 @media screen and (max-width: 425px) {
   .question-img {
+    /* adjusts where the img is in the grid to change the layout of the page  */
     grid-column: 1;
     grid-row: 2;
     max-width: 100%;
   }
 
   .answer-text button {
+    /* widen the button */
     width: 95%;
   }
 
   .synopsis {
+    /* change the synopsis location in the gri */
     grid-row: 3;
   }
 }

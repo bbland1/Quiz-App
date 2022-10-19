@@ -72,6 +72,9 @@ header h1 {
   box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24);
 }
 
+/* media queries */
+
+/* tablet size screens to change the nave bar */
 @media screen and (max-width: 786px) {
   header h1 {
     font-size: 4rem;
@@ -82,6 +85,7 @@ header h1 {
   }
 }
 
+/* phone size screens to change the nave bar */
 @media screen and (max-width: 425px) {
   header h1 {
     font-size: 2rem;

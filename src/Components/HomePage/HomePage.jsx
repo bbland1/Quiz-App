@@ -23,6 +23,8 @@ function Home() {
         <p>As I was on social media in the animanga realm it seems pretty prevalent that there are a lot ideas that Shoujo can't be more than romance. Shows that were in fact Shounen were labeled as Shoujo seeming to be just because it had people falling in love. Following creators that focus their efforts on the Shoujo and Josei space was awesome and it allows me to constantly have more than just the "mainstream" shown to me.</p>
 
         <p>On this site there is fun quiz that will just see if you can pick the demographic of the shown manga. Nothing more and nothing serious, there is a few things listed on the link page that helped formed the idea or are just good video/non-video essay formed information about anime and manga. Click the button below to head to the quiz page and see if you know the Shoujo.</p>
+
+        {/* Button has to be on the inside for the css styling of a button to actually apply but this allows the button to work lke a link would and not refresh the page based on react-router */}
         <Link to="/quiz" className="func-button"><button>Start the quiz</button></Link>
       </main>
     </div>

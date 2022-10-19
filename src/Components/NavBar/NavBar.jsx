@@ -3,6 +3,7 @@ import { NavLink } from "react-router-dom";
 import "./navbar.css";
 
 function NavBar() {
+  // the value of the class name that the is active will add if the link had been clicked on and the site is on that page
   let activeNav = "active-nav";
 
   return (

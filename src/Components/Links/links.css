@@ -16,6 +16,9 @@ span {
   justify-content: center;
 }
 
+/* media queries */
+
+/* changes the videos on the page to be properly sized ina straight line vertically */
 @media screen and (max-width: 425px) {
   .videos-resources iframe {
     width: 100%;
