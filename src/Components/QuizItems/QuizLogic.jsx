@@ -43,7 +43,16 @@ function QuizLogic() {
     }
   }
 
-  let scorePercentage = Math.round((score / questions.length) * 100)
+  let scorePercentage = Math.round((score / questions.length) * 100);
+  let finalScoreWords = ""
+
+  if (scorePercentage > 75) {
+    finalScoreWords = "Seems you in fact know your Shoujo and demographics, good job!"
+  } else if (scorePercentage > 50) {
+    finalScoreWords = "Maybe you've dabbled in Shoujo but you at least know your demographics."
+  } else {
+    finalScoreWords = "...soooooo Shoujo...try it."
+  }
   
 
   return (
@@ -51,7 +60,7 @@ function QuizLogic() {
       {
         showFinalScore ? (
           <div className="question-card func-button final-score">
-            <h2>Seems you do know Shoujo</h2>
+            <h2>{finalScoreWords}</h2>
             <h3>You got a {scorePercentage}%!</h3>
             <h3>{score} out of {questions.length} correct</h3>
             <button onClick={() => handleRestart()}>Restart</button>
