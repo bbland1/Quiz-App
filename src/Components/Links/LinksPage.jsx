@@ -32,7 +32,7 @@ function Links() {
           </div>
         </div>
         <div>
-          <h3>Other links</h3>
+          <h2>Other links</h2>
           <p>All the synopsis for the manga used in the quiz were taken from with MAL <a href="https://myanimelist.net">(My Anime List)</a> or <a href="https://anilist.co/">Anilist</a>. Below are some interesting reads that were linked in the <span>What Is Shoujo?</span> video above.</p>
           <ul>
             <li><a href="https://comicsforum.org/2015/03/10/shojo-manga-research-the-legacy-of-women-critics-and-their-gender-based-approach-by-masafumi-monden/#more-3873">Manga Studies #7</a></li>

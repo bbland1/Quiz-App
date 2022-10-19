@@ -28,7 +28,6 @@ span {
 
 header h1 {
   font-size: 6rem;
-  margin-top: 0;
 }
 
 .header-title {
@@ -64,4 +63,10 @@ header h1 {
   transform: scale(0.98);
   /* Lowering the shadow */
   box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24);
+}
+
+@media screen and (max-width: 786px) {
+  header h1 {
+    font-size: 4rem;
+  }
 }

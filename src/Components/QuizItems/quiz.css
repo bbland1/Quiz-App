@@ -1,3 +1,17 @@
+h2 {
+  font-size: 2.8rem;
+  text-align: center;
+  color: rgb(240, 135, 130);
+  background-color: white;
+  border: thick double #faa549ff;
+  border-radius: 20px;
+  padding: 0.625rem;
+}
+
+h3, p {
+  font-size: 1.25rem;
+  text-align: center;
+}
 .question-card {
   margin: 0 auto;
   background-color: gray;
@@ -6,7 +20,6 @@
   box-shadow: rgba(50, 50, 93, 0.23) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
   width: 90%;
   height: auto;
-  justify-content: center;
 }
 
 .direction {
@@ -18,39 +31,25 @@
   width: 100%;
   grid-template-columns: 1fr 0.75fr;
   grid-template-rows: auto auto;
+  column-gap: 0.625rem;
   justify-items: center;
   align-items: center;
 }
 
 .question-img {
-  width: 300px;
+  width: 350px;
   grid-column: 2/ 3;
   grid-row: 1 / span 2;
-  justify-self: center;
-  align-self: center;
 }
 
 .question-text {
-  color: rgb(240, 135, 130);
-  background-color: white;
-  border: thick double #faa549ff;
-  border-radius: 20px;
-  font-size: 45px;
-  padding: 10px;
-  text-align: center;
   grid-column: 1;
   grid-row: 1;
-  justify-self: center;
-  align-self: center;
 }
 
 .synopsis {
-  font-size: 20px;
   grid-column: 1;
   grid-row: 2;
-  justify-self: center;
-  align-self: center;
-  text-align: center;
 }
 
 .answer-text ul {
@@ -63,11 +62,43 @@
 }
 
 .final-score {
-  margin: 0 auto;
-  background-color: gray;
-  padding: 20px;
-  border-radius: 20px;
-  box-shadow: rgba(50, 50, 93, 0.23) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
   width: 60%;
-  height: auto;
+}
+
+@media screen and (orientation: landscape){
+  .question-card {
+    width: 95%;
+  }
+  .answer-text button {
+    width: 97%;
+  }
+}
+
+@media screen and (max-width: 768px){
+  .question-card {
+    width: 95%;
+  }
+  .answer-text button {
+    width: 97%;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .question-card{
+    width: 97%;
+  }
+  
+  .question-info {
+    grid-template-rows: 0.25fr 1fr 1fr;
+  }
+
+  .question-img {
+    grid-column: 1;
+    grid-row: 2;
+    
+  }
+
+  .synopsis {
+    grid-row: 3;
+  }
 }

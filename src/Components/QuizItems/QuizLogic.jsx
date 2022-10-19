@@ -43,20 +43,24 @@ function QuizLogic() {
     }
   }
 
+  let scorePercentage = Math.round((score / questions.length) * 100)
+  
+
   return (
     <div>
       {
         showFinalScore ? (
-          <div className="question-card func-button">
+          <div className="question-card func-button final-score">
             <h2>Seems you do know Shoujo</h2>
-            <h3>You got {score} out of {questions.length} correct! {Math.round((score / questions.length) * 100)}%</h3>
+            <h3>You got a {scorePercentage}%!</h3>
+            <h3>{score} out of {questions.length} correct</h3>
             <button onClick={() => handleRestart()}>Restart</button>
           </div>
         ) : (
           <div className="question-card func-button">
             {currentQuestion !== 0 && <button onClick={() => goBack()} className="direction">Back</button>}
             {currentQuestion !== 0 && <h3 className="direction">Score: {score}/{questions.length}</h3>}
-            <h3>Question {currentQuestion + 1} of {questions.length}</h3>
+            <h4>Question {currentQuestion + 1} of {questions.length}</h4>
             <div className="question-info">
             <h2 className="question-text">{questions[currentQuestion].questionText}</h2>
               {questions[currentQuestion].question_img !== null && <img src={questions[currentQuestion].question_img} alt={questions[currentQuestion].img_alt} className="question-img" />}

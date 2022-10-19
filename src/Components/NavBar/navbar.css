@@ -20,19 +20,22 @@ nav li a {
 }
 
 nav li a:hover {
-  display: block;
-  color: white;
   background-color: rgb(240, 135, 130);
   border-radius: 15px;
-  text-align: center;
-  text-decoration: none;
 }
 
 .active-nav {
-  display: block;
   color: black;
   background-color: #faa549ff;
   border-radius: 15px;
-  text-align: center;
-  text-decoration: none;
+}
+
+
+
+@media screen and (orientation: landscape){
+
+}
+
+@media screen and (max-width: 768px){
+
 }
