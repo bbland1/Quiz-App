@@ -72,7 +72,7 @@ function QuizLogic() {
             <h4>Question {currentQuestion + 1} of {questions.length}</h4>
             <div className="question-info">
             <h2 className="question-text">{questions[currentQuestion].questionText}</h2>
-              {questions[currentQuestion].question_img !== null && <img src={questions[currentQuestion].question_img} alt={questions[currentQuestion].img_alt} className="question-img" />}
+              {questions[currentQuestion].question_img !== null && <img src={questions[currentQuestion].question_img} alt="" className="question-img" />}
               {questions[currentQuestion].question_description !== null && <p className="synopsis"><em>{questions[currentQuestion].question_description}</em></p>}
             </div>
             <div className="answer-text">
