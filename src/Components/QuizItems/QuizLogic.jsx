@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import questions from "./QuizQuestions";
+import "./quiz.css"
 
 function QuizLogic() {
   // State Properties of the quiz
