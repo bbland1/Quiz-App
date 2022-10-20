@@ -86,7 +86,7 @@ header h1 {
 }
 
 /* phone size screens to change the nave bar */
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 428px) {
   header h1 {
     font-size: 2rem;
   }

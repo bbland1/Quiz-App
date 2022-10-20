@@ -43,7 +43,7 @@ nav li a:hover {
   }
 }
 /* phone size screens to change the nave bar */
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 428px) {
   nav li a {
     font-size: 1.2rem;
     margin: 10px 0;

@@ -19,7 +19,7 @@ span {
 /* media queries */
 
 /* changes the videos on the page to be properly sized ina straight line vertically */
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 428px) {
   .videos-resources iframe {
     width: 100%;
   }
