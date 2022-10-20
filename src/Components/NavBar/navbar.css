@@ -30,7 +30,7 @@ nav li a:hover {
 
 /* media queries */
 
-/* tablet size screens to change the nave bar */
+/* tablet size screens */
 @media screen and (max-width: 768px) {
   nav ul {
     display: block;
@@ -42,7 +42,7 @@ nav li a:hover {
     padding: 1rem 2rem;
   }
 }
-/* phone size screens to change the nave bar */
+/* phone size screens */
 @media screen and (max-width: 428px) {
   nav li a {
     font-size: 1.2rem;
