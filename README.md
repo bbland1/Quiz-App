@@ -12,7 +12,7 @@ What was used:
 - React-type-animation
 - Manga cover images found on google
 
-- Deployment: insert link
+- Deployment: https://so-its-shoujo.vercel.app
 
 **Personal Highlights:**
 This was first idea I started as kind of all my own so in general just getting it to the point where I want to show it even to my friends or husband si pretty cool. It also really proved to me that I can do the things if I take the time and effort, but it mostly proved that I really enjoy the process of coding and the work that goes into finding solutions.
