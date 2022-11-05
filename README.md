@@ -11,6 +11,7 @@ What was used:
 - React-Router
 - React-type-animation
 - Manga cover images found on google
+- font-awesome for icons
 
 - Deployment: https://so-its-shoujo.vercel.app
 
