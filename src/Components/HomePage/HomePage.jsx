@@ -1,5 +1,6 @@
 import React from "react";
 import NavBar from "../NavBar/NavBar";
+import Footer from "../Footer/Footer";
 import HomeTitle from "./HomeTitle";
 import { Link } from "react-router-dom";
 
@@ -27,6 +28,7 @@ function Home() {
         {/* Button has to be on the inside for the css styling of a button to actually apply but this allows the button to work lke a link would and not refresh the page based on react-router */}
         <Link to="/quiz" className="func-button"><button>Start the quiz</button></Link>
       </main>
+      <Footer />
     </div>
   );
 }

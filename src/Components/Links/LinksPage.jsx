@@ -1,4 +1,5 @@
 import React from "react";
+import Footer from "../Footer/Footer";
 import NavBar from "../NavBar/NavBar";
 import "./links.css"
 
@@ -41,6 +42,7 @@ function Links() {
           </ul>
         </div>
       </main>
+      <Footer />
     </div>
   );
 }

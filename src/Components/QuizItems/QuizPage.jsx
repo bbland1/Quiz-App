@@ -1,4 +1,5 @@
 import React from "react";
+import Footer from "../Footer/Footer";
 import NavBar from "../NavBar/NavBar";
 import QuizLogic from "./QuizLogic";
 
@@ -12,6 +13,7 @@ function Quiz() {
       <main className="main-part">
         <QuizLogic />
       </main>
+      <Footer />
     </div>
   );
 }

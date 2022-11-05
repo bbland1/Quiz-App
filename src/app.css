@@ -14,7 +14,7 @@ body {
 h2 {
   font-size: 2.8rem;
   text-align: center;
-  color: rgb(240, 135, 130);
+  color: #f08782;
   background-color: white;
   border: thick double #faa549ff;
   border-radius: 20px;
@@ -62,7 +62,7 @@ header h1 {
 }
 
 .func-button button:hover {
-  background-color: rgb(240, 135, 130);
+  background-color: #f08782;
 }
 
 .func-button button:active {
