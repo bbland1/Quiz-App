@@ -11,6 +11,7 @@ function Quiz() {
         <h1>Is it a Shoujo?</h1>
       </header>
       <main className="main-part">
+        <h3>Can you actually tell the demographic just by looking at a picture and reading the summary?</h3>
         <QuizLogic />
       </main>
       <Footer />

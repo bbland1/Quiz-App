@@ -1,6 +1,7 @@
 h3 {
   font-size: 1.25rem;
   text-align: center;
+  color: #fff
 }
 
 .question-card {
@@ -76,13 +77,30 @@ h3 {
   }
 }
 
+@media screen and (max-width: 986px){
+  .answer-text button {
+    /* widen the button */
+    width: 97.5%;
+  }
+
+  .final-score {
+    /* change the space of the score card when it is shown */
+    width: 80%;
+  }
+}
+
 /* phone size screens */
-@media screen and (max-width: 428px) {
+@media screen and (max-width: 650px) {
   .question-img {
     /* adjusts where the img is in the grid to change the layout of the page  */
-    grid-column: 1;
+    grid-column: 1 / span 2;
     grid-row: 2;
     max-width: 100%;
+  }
+
+  .question-text {
+    grid-column: 1 / span 2;
+    grid-row: 1;
   }
 
   .answer-text button {
@@ -92,6 +110,7 @@ h3 {
 
   .synopsis {
     /* change the synopsis location in the gri */
+    grid-column: 1 / span 2;
     grid-row: 3;
   }
 

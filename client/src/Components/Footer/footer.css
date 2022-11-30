@@ -3,9 +3,9 @@ footer {
   height: 2.70rem;
   width: 100%;
   background-color: #faa549ff;;
-  margin-top: 25px;
+  margin: 25px 0 0;
   color: white;
-  padding: 25px;
+  padding: 25px 0;
   text-align: center;
 }
 
