@@ -7,11 +7,11 @@ import { Link } from "react-router-dom";
 function Home() {
   return (
     <div>
-      <header className="header-title">
+      <header>
         <NavBar />
-        <h1><HomeTitle /></h1>
       </header>
       <main className="main-part">
+        <h1 className="header-title"><HomeTitle /></h1>
         <h2>What is Shoujo?</h2>
         <p>Shoujo is a demographic of anime and manga. It means young girl, so it would typically mean that it is anime or manga that is marketed towards young girls, usually 8 - 19 years old. These manga usually are published in a magazine that are considered a shoujo magazine. This a pretty simple definition that doesn't really focus on the content of the anime or manga just who it is marketed to. These means that shoujo can a variety of genres like action, fantasy, romance, horror and more.</p>
 

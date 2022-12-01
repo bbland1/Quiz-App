@@ -6,11 +6,11 @@ import QuizLogic from "./QuizLogic";
 function Quiz() {
   return (
     <div>
-      <header className="header-title">
+      <header>
         <NavBar />
-        <h1>Is it a Shoujo?</h1>
       </header>
       <main className="main-part">
+        <h1 className="header-title">Is it a Shoujo?</h1>
         <h3>Can you actually tell the demographic just by looking at a picture and reading the summary?</h3>
         <QuizLogic />
       </main>

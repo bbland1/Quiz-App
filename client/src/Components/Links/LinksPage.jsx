@@ -6,11 +6,11 @@ import "./links.css"
 function Links() {
   return (
     <div>
-      <header className="header-title">
+      <header>
         <NavBar />
-        <h1>Various Links</h1>
       </header>
       <main className="main-part">
+        <h1 className="header-title">Various Links</h1>
         <p>These are just some interesting videos I have watched before and during the making of this site. They aren't meant to change your mind, but I think they have good interesting thoughts on anime, manga and Shoujo specifically.</p>
         <p>Video essays, group interviews or the essays linked below are just some of the vast content out there that takes a critical aspect to anime and manga. While you don't always have to think critically about this media it can be nice to open to seeing the stories as more than just pictures and words.</p>
         <h2>Videos</h2>

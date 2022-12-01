@@ -15,6 +15,9 @@ function NavBar() {
         <li><NavLink to="/quiz" className={({ isActive }) =>
           isActive ? activeNav : undefined
         }>Quiz</NavLink></li>
+        <li><NavLink to="/quiz-addition" className={({ isActive }) =>
+          isActive ? activeNav : undefined
+        }>Add to Quiz</NavLink></li>
         <li><NavLink to="/links" className={({ isActive }) =>
           isActive ? activeNav : undefined
         }>Links</NavLink></li>

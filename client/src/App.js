@@ -2,6 +2,7 @@ import { Routes, Route } from 'react-router-dom';
 import Home from './Components/HomePage/HomePage';
 import Quiz from './Components/QuizItems/QuizPage';
 import Links from './Components/Links/LinksPage';
+import SubmitForm from './Components/Submit/SubmitForm';
 import "./app.css";
 
 
@@ -12,6 +13,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/quiz" element={<Quiz />} />
+        <Route path="/quiz-addition" element={<SubmitForm />} />
         <Route path="/links" element={<Links />} />
       </Routes>
     </div>

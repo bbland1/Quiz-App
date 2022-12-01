@@ -6,19 +6,48 @@ const cors = require('cors');
 
 // middleware set up
 const app = express();
-const port = process.env.PORT || 5000;
+const port = process.env.PORT || 8000;
 
 app.use(cors());
 app.use(express.json());
 
+// setting up the mongodb connection through mongoose
+mongoose
+  .connect(process.env.MONGO_DB)
+  // check if connecting to the db goes well
+  .then(() => { console.log("Connected to database") })
+  .catch(err => { console.log("Issue connecting to database", err) })
 
-mongoose.connect(process.env.MONGO_DB)
-
+// the schema for the quiz question, for format in the database 
 const questionSchema = mongoose.Schema({
-  question: String,
-  summary: String,
-  image: String,
-})
+  imageUrl: String,
+  title: String,
+  synopsis: String,
+  questionValue: Number,
+  answersOptions: [
+    { id: String, answerText: String, isCorrect: Boolean },
+    { id: String, answerText: String, isCorrect: Boolean },
+    { id: String, answerText: String, isCorrect: Boolean },
+    { id: String, answerText: String, isCorrect: Boolean }
+  ],
+  addedToQuiz: Boolean,
+});
+
+const Question = mongoose.model("Question", questionSchema);
+
+app.get("/", async (req, res) => {
+  Question.find({}, (err, foundQuestions) => {
+    if (err) {
+      console.log(err);
+    } else {
+      if (foundQuestions) {
+        res.json(foundQuestions)
+      }
+    }
+  })
+});
+
+// app.get("/login")
 
 
 app.listen(port, () => {

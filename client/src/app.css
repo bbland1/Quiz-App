@@ -8,7 +8,7 @@ html {
 body {
   background-color: #373737ff;
   color: #faa549ff;
-  margin: 0 auto;
+  margin: 0;
 }
 
 h2 {
@@ -23,7 +23,6 @@ h2 {
 
 .main-part {
   margin: 0 auto;
-  top: 100px;
   width: 90%;
 }
 
@@ -33,11 +32,16 @@ p {
   text-align: center;
 }
 
-header h1 {
+header {
+  margin-top: 100px;
+}
+
+h1 {
   font-size: 6rem;
 }
 
 .header-title {
+  font-size: 6rem;
   margin: 0 auto;
   text-align: center;
 }
