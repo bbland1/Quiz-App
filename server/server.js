@@ -33,7 +33,22 @@ const questionSchema = mongoose.Schema({
   addedToQuiz: Boolean,
 });
 
+// schema for the admin to check the suggestions added and then add or remove questions to the quiz
+const userSchema = mongoose.Schema({
+  email: String,
+  password: String,
+})
+
+// the suggestions breakdown
+const suggestionsSchema = mongoose.Schema({
+  title: String,
+  imageUrl: String,
+  demographic: String,
+})
+
 const Question = mongoose.model("Question", questionSchema);
+const User = mongoose.model("User", userSchema);
+const Suggestion = mongoose.model("Suggestion", suggestionSchema);
 
 app.get("/", async (req, res) => {
   Question.find({}, (err, foundQuestions) => {

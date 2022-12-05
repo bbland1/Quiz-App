@@ -4,6 +4,7 @@ import NavBar from "../NavBar/NavBar";
 import QuizLogic from "./QuizLogic";
 
 function Quiz() {
+  
   return (
     <div>
       <header>

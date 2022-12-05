@@ -2,36 +2,31 @@ nav {
   position: fixed;
   top: 0px;
   width: 100%;
-  border-bottom: 1px dotted #faa549ff;
+  border-bottom: 1.5px dotted #faa549ff;
   background-color: #373737ff;
 }
 nav ul {
   display: flex;
   justify-content: space-around;
+  padding: 0;
 }
 
 nav li {
-  list-style-type: none;
   display: block;
-  color: white;
+  list-style-type: none;
   text-align: center;
-  text-decoration: none;
-  padding: 1rem 5rem;
   font-size: 1.5625rem;
 }
 
 nav li a {
-  /* display: block;
-  color: white;
-  text-align: center;
+  padding: 1rem 7rem;
+  width: 100%;
   text-decoration: none;
-  padding: 1rem 5rem;
-  font-size: 1.5625rem; */
 }
 
 nav li a:hover {
   background-color: #f08782;
-  border-radius: 15px;
+  /* border-radius: 15px; */
 }
 
 /* for react router setting of navlink to display differently when active */

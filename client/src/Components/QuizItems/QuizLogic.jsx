@@ -70,7 +70,7 @@ function QuizLogic() {
   } else {
     finalScoreWords = "...soooooo Shoujo...try it."
   }
-  
+
 
   return (
     // if true to show final score it will show thw final score card if false show the quiz
@@ -81,6 +81,7 @@ function QuizLogic() {
             <h2>{finalScoreWords}</h2>
             <h3>You got a {scorePercentage}%!</h3>
             <h3>{score} out of {questions.length} correct</h3>
+            <p>While you got a score, maybe good, maybe bad, this quiz isn't about getting it 100%. The quiz and this page was built to remind us all that the demographics are demographics. That just because you have the title, a picture and a synopsis doesn't mean it automatically belongs in one demographic. That demographics aren't the deciding factor always.</p>
             <button onClick={() => handleRestart()}>Restart</button>
           </div>
         ) : (
@@ -88,10 +89,12 @@ function QuizLogic() {
             {currentQuestion !== 0 && <button onClick={() => goBack()} className="direction">Back</button>}
             {currentQuestion !== 0 && <h3 className="direction">Score: {score}/{questions.length}</h3>}
             <h4>Question {currentQuestion + 1} of {questions.length}</h4>
-            <div className="question-info">
-            <h2 className="question-text">{questions[currentQuestion].questionText}</h2>
-              {questions[currentQuestion].question_img !== null && <img src={questions[currentQuestion].question_img} alt="" className="question-img" />}
-              {questions[currentQuestion].question_description !== null && <p className="synopsis"><em>{questions[currentQuestion].question_description}</em></p>}
+            <div class="question-grid">
+              <div className="question-info">
+                <h2 className="question-text">{questions[currentQuestion].questionText}</h2>
+                {questions[currentQuestion].question_img !== null && <img src={questions[currentQuestion].question_img} alt="" className="question-img" />}
+                {questions[currentQuestion].question_description !== null && <p className="synopsis"><em>{questions[currentQuestion].question_description}</em></p>}
+              </div>
             </div>
             <div className="answer-text">
               <ul>

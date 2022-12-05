@@ -37,11 +37,11 @@ header {
 }
 
 h1 {
-  font-size: 6rem;
+  font-size: 5rem;
 }
 
 .header-title {
-  font-size: 6rem;
+  font-size: 5rem;
   margin: 0 auto;
   text-align: center;
 }
@@ -74,6 +74,16 @@ h1 {
   transform: scale(0.98);
   /* Lowering the shadow */
   box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24);
+}
+
+.question-card {
+  margin: 0 auto;
+  background-color: gray;
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: rgba(50, 50, 93, 0.23) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+  width: 90%;
+  height: auto;
 }
 
 /* media queries */
